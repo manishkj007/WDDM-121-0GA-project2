@@ -1,4 +1,4 @@
-.mt-20{
+.mt-20 {
   margin-top: 20px;
 }
 
@@ -6,139 +6,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .navbar-brand.logo {
-    font-family: 'Roboto', sans-serif; /* Custom font */
-    font-size: 2rem; /* Adjust size as needed */
-    font-weight: bold; /* Make the font bold */
-    color: #007bff; /* Change color to match your theme */
-    text-transform: uppercase; /* Capitalize text */
-    letter-spacing: 0.1em; /* Space out letters slightly */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-    display: flex; /* Flexbox for aligning logo */
-    align-items: center; /* Center items vertically */
+  font-family: 'Roboto', sans-serif; /* Custom font */
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold; /* Make the font bold */
+  color: #007bff; /* Change color to match your theme */
+  text-transform: uppercase; /* Capitalize text */
+  letter-spacing: 0.1em; /* Space out letters slightly */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  display: flex; /* Flexbox for aligning logo */
+  align-items: center; /* Center items vertically */
 }
 
 .navbar-brand.logo::before {
-    content: url('/path/to/your/logo-icon.png'); /* Logo icon */
-    margin-right: 10px; /* Space between icon and text */
+  content: url('/path/to/your/logo-icon.png'); /* Logo icon */
+  margin-right: 10px; /* Space between icon and text */
+}
+h1
+{
+  color: #000;
+  font-family: 'Roboto' sans-serif;
 }
 
+h2
+{
+  color: #000;
+  font-family: 'Roboto' sans-serif;
+  padding-top: 15px;
+}
 
-footer{
+footer {
   height: 70px;
   margin: 50px 0 0;
+  background-color: #343a40;
+  padding: 20px 0;
+  text-align: center;
+  color: #000;
 }
 
-footer>.container, footer .row{
+footer>.container, footer .row {
   height: 100%;
 }
-.list {
-    display: flex;
-}
-.list-item {
-    display: flex;
-    margin-bottom: 20px;
 
+.list {
+  display: flex;
 }
+
+.list-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .list-content {
-    width: 100%;
-    background-color: #f8f9fa;
+  width: 100%;
+  background-color: #f8f9fa;
 }
-.card-img-top{
+
+.card-img-top {
   width: 100%;
   height: 225px;
-
 }
-.card-text{
+
+.card-text {
   padding-bottom: 20px;
   box-sizing: border-box;
 }
-.row{
+
+.row {
   position: relative;
 }
+
 .button-box {
-    position: absolute;
-    bottom:0px;
-    margin-bottom: 10px;
-   
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
 }
-.page-wrapper{
+
+.page-wrapper {
   margin: 50px auto;
-  padding: 20px 15px; /*t,b:20 l,r:15*/
+  padding: 20px 15px; /* t,b:20 l,r:15 */
   box-shadow: 0 0 10px #ccc;
   border-radius: 10px;
 }
-.page-wrapper h1{
+
+.page-wrapper h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-.card-block{
+
+.card-block {
   padding: 15px;
 }
-.w100{
-  width:100%;
+
+.w100 {
+  width: 100%;
 }
-.w60{
-  width:60%;
+
+.w60 {
+  width: 60%;
 }
-.w30{
+
+.w30 {
   width: 30%;
 }
-.w20{
+
+.w20 {
   width: 20%;
 }
-.w10{
+
+.w10 {
   width: 10%;
 }
-.w5{
+
+.w5 {
   width: 5%;
 }
-.articles{
+
+.articles {
   margin-top: 15px;
 }
-.article-inline{
+
+.article-inline {
   padding-left: 10px;
   flex-wrap: wrap;
 }
-.article-inline:nth-of-type(odd){
-  background: rgba(0,0,0,0.05);
+
+.article-inline:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.05);
 }
-#create-image-file{
- padding-left: 5px;
+
+#create-image-file {
+  padding-left: 5px;
   height: 45px;
 }
-.sight-container{
+
+.sight-container {
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
-  padding: 15px 50px; /*t,b:15 l,r:50 */
+  padding: 15px 50px; /* t,b:15 l,r:50 */
 }
-.sight-container h1{
+
+.sight-container h1 {
   text-align: center;
 }
-.sight-container img{
+
+.sight-container img {
   width: 100%;
 }
-.sight-container .date{
+
+.sight-container .date {
   font-weight: bold;
 }
-.map{
+
+.map {
   height: 400px;
 }
-.login-container{
+
+.login-container {
   margin-top: 50px;
-  padding: 20px 15px 30px; /*t:20 l,r:15 b:30 */
+  padding: 20px 15px 30px; /* t:20 l,r:15 b:30 */
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
 }
-.login-container h1{
+
+.login-container h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-#myTabContent{
+
+#myTabContent {
   margin-top: 20px;
 }
 
-/*Arrow Button*/
+/* Arrow Button */
 #back2Top {
   width: 40px;
   line-height: 40px;
@@ -160,7 +200,58 @@ footer>.container, footer .row{
   font-size: 30px;
   text-decoration: none;
 }
+
 #back2Top:hover {
   background-color: #DDF;
   color: #000;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.content {
+  padding: 50px 0;
+  flex: 1;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Card click effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.clicked {
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1000;
+}
+
+.blur-background {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
 }
