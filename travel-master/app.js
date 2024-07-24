@@ -35,16 +35,36 @@ app.use('/emails', emailsRouter);
 app.use('/users', usersRouter);
 
 
-app.get('/sight', async (req, res) =>{
+function formatContentText(text) {
+  // Convert the markdown-like image syntax to HTML
+  const imageRegex = /!\[.*?\]\((.*?)\)/g;
+  const paragraphs = text.split('\n').filter(paragraph => paragraph.trim() !== '');
+  
+  return paragraphs
+      .map(paragraph => {
+          // Replace image syntax with <img> tag
+          const formattedParagraph = paragraph.replace(imageRegex, '<img src="$1" alt="Image">');
+          return `<p>${formattedParagraph}</p>`;
+      })
+      .join('');
+}
+
+// Route to render the sight data
+app.get('/sight', async (req, res) => {
     let id = req.query.id;
-    let post = await Post.findOne({id:id});
-    res.render('sight', {
-        title: post.title,
-        imageUrl: post.imageUrl,
-        date: post.date,
-        text: post.text
-    })
-})
+    let post = await Post.findOne({id: id});
+    if (post) {
+        res.render('sight', {
+            title: post.title,
+            imageUrl: post.imageUrl,
+            date: post.date, // Format date for rendering
+            text: formatContentText(post.text) // Format text for rendering
+        });
+    } else {
+        res.status(404).send('Post not found');
+    }
+});
+
 
 
 app.get('/admin', (req,res) =>{
