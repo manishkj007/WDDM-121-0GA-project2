@@ -2,35 +2,81 @@
   margin-top: 20px;
 }
 
+.hero {
+  background: url('images/hero.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.btn-elliptical {
+  border: 2px solid #007bff; /* Border color */
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.btn-elliptical:hover {
+  background-color: #007bff; /* Same color as border */
+  color: white;
+}
+.destination-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.testimonial {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+.testimonial h2 {
+  margin-bottom: 40px;
+}
 /* Include Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .navbar-brand.logo {
-  font-family: 'Roboto', sans-serif; /* Custom font */
-  font-size: 2rem; /* Adjust size as needed */
-  font-weight: bold; /* Make the font bold */
-  color: #007bff; /* Change color to match your theme */
-  text-transform: uppercase; /* Capitalize text */
-  letter-spacing: 0.1em; /* Space out letters slightly */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-  display: flex; /* Flexbox for aligning logo */
-  align-items: center; /* Center items vertically */
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand.logo::before {
-  content: url('/path/to/your/logo-icon.png'); /* Logo icon */
-  margin-right: 10px; /* Space between icon and text */
-}
-h1
-{
-  color: #000;
-  font-family: 'Roboto' sans-serif;
+  content: url('/path/to/your/logo-icon.png');
+  margin-right: 10px;
 }
 
-h2
-{
+.team-member-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-member-emoji {
+  font-size: 100px; /* Increased size */
+  display: block;
+  margin: 10px auto;
+}
+h1 {
   color: #000;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
   padding-top: 15px;
 }
 
@@ -43,22 +89,14 @@ footer {
   color: #000;
 }
 
-footer>.container, footer .row {
-  height: 100%;
+.destination-card {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.list {
-  display: flex;
-}
-
-.list-item {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.list-content {
-  width: 100%;
-  background-color: #f8f9fa;
+.destination-img {
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-img-top {
@@ -75,135 +113,45 @@ footer>.container, footer .row {
   position: relative;
 }
 
-.button-box {
-  position: absolute;
-  bottom: 0px;
-  margin-bottom: 10px;
-}
-
-.page-wrapper {
-  margin: 50px auto;
-  padding: 20px 15px; /* t,b:20 l,r:15 */
-  box-shadow: 0 0 10px #ccc;
-  border-radius: 10px;
-}
-
-.page-wrapper h1 {
+.hero {
+  background: url('images/hero.jpg') center center/cover no-repeat;
+  color: white;
   text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
-.card-block {
-  padding: 15px;
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
-.w100 {
-  width: 100%;
+.btn-elliptical {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
 }
 
-.w60 {
-  width: 60%;
+.btn-elliptical:hover {
+  background-color: white;
+  color: black;
 }
 
-.w30 {
-  width: 30%;
+.testimonial {
+  background-color: #f8f9fa;
+  padding: 40px 0;
 }
 
-.w20 {
-  width: 20%;
-}
-
-.w10 {
-  width: 10%;
-}
-
-.w5 {
-  width: 5%;
-}
-
-.articles {
-  margin-top: 15px;
-}
-
-.article-inline {
-  padding-left: 10px;
-  flex-wrap: wrap;
-}
-
-.article-inline:nth-of-type(odd) {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-#create-image-file {
-  padding-left: 5px;
-  height: 45px;
-}
-
-.sight-container {
-  margin-top: 50px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-  padding: 15px 50px; /* t,b:15 l,r:50 */
-}
-
-.sight-container h1 {
-  text-align: center;
-}
-
-.sight-container img {
-  width: 100%;
-}
-
-.sight-container .date {
-  font-weight: bold;
-}
-
-.map {
-  height: 400px;
-}
-
-.login-container {
-  margin-top: 50px;
-  padding: 20px 15px 30px; /* t:20 l,r:15 b:30 */
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-}
-
-.login-container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#myTabContent {
-  margin-top: 20px;
-}
-
-/* Arrow Button */
-#back2Top {
-  width: 40px;
-  line-height: 40px;
-  overflow: hidden;
-  z-index: 999;
-  display: none;
-  cursor: pointer;
-  -moz-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  position: fixed;
-  bottom: 50px;
-  right: 0;
-  background-color: #DDD;
-  color: #555;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-#back2Top:hover {
-  background-color: #DDF;
-  color: #000;
+.testimonial h2 {
+  margin-bottom: 40px;
 }
 
 body {
@@ -249,9 +197,4 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 1000;
-}
-
-.blur-background {
-  filter: blur(5px);
-  transition: filter 0.3s ease;
 }
