@@ -2,6 +2,45 @@
   margin-top: 20px;
 }
 
+.hero {
+  background: url('images/hero.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.btn-elliptical {
+  border: 2px solid #007bff; /* Border color */
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.btn-elliptical:hover {
+  background-color: #007bff; /* Same color as border */
+  color: white;
+}
+.destination-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.testimonial {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+.testimonial h2 {
+  margin-bottom: 40px;
+}
+
 /* Include Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
@@ -22,6 +61,56 @@
     margin-right: 10px; /* Space between icon and text */
 }
 
+.team-member-card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-member-emoji {
+  font-size: 100px; /* Increased size */
+  display: block;
+  margin: 10px auto;
+}
+
+.hero {
+  background: url('images/hero.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-elliptical {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-elliptical:hover {
+  background-color: white;
+  color: black;
+}
+
+.testimonial {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.testimonial h2 {
+  margin-bottom: 40px;
+}
 
 footer{
   height: 70px;

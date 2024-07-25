@@ -81,5 +81,8 @@ app.get('/login', (req, res) =>{
     res.render('login');
 })
 
+/app.get('/about', (req, res) => {
+    res.sendFile(__dirname + '/views/about.html');
+});
 
 app.listen(3000, () => console.log('Listening 3000...'));
